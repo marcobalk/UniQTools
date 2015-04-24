@@ -8,7 +8,7 @@
 		"command": "uniq_php_serialize"
 	},
 	{
-		"caption": "PHP Deserialize",
-		"command": "uniq_php_deserialize"
+		"caption": "PHP Unserialize",
+		"command": "uniq_php_unserialize"
 	}
 ]

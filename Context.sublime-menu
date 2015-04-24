@@ -10,9 +10,9 @@
 			"command": "uniq_php_serialize"
 		},
 		{
-			"caption": "PHP Deserialize",
-			"id": "uniq_php_deserialize",
-			"command": "uniq_php_deserialize"
+			"caption": "PHP Unserialize",
+			"id": "uniq_php_unserialize",
+			"command": "uniq_php_unserialize"
 		},
 		{"caption":"-", "id":"side-bar-start-separator"},
 		{
