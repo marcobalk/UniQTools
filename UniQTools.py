@@ -15,7 +15,7 @@ class UniqAlnumCommand(sublime_plugin.TextCommand):
 			else:
 				self.view.insert(edit, selection.begin(), self.alnum_generator())
 
-	def alnum_generator():
+	def alnum_generator(self):
 		alnumSettings = sett.get("Alnum")
 		length = alnumSettings.get("length", 25)
 		if length < 1:
