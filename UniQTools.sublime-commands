@@ -1,0 +1,10 @@
+[
+	{
+		"caption" : "PHP Serialize",
+		"command" : "uniq_php_serialize"
+	},
+	{
+		"caption" : "PHP Unserialize",
+		"command" : "uniq_php_unserialize"
+	}
+]

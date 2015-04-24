@@ -1,0 +1,5 @@
+[
+	{
+		"keys": ["ctrl+3"], "command": "uniq_alnum"
+	}
+]

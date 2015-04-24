@@ -1,0 +1,24 @@
+[
+	{"caption":"-", "id":"side-bar-start-separator"},
+	{
+		"caption": "UniQ Tools",
+		"id": "uniqtools",
+		"children":
+		[{
+			"caption": "PHP Serialize",
+			"id": "uniq_php_serialize",
+			"command": "uniq_php_serialize"
+		},
+		{
+			"caption": "PHP Deserialize",
+			"id": "uniq_php_deserialize",
+			"command": "uniq_php_deserialize"
+		},
+		{"caption":"-", "id":"side-bar-start-separator"},
+		{
+			"caption": "Alnum",
+			"id": "uniq_alnum",
+			"command": "uniq_alnum"
+		}]
+	}
+]

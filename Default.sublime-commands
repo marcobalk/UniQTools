@@ -1,0 +1,14 @@
+[
+	{
+		"caption" : "Generate Alnum",
+		"command" : "uniq_alnum"
+	},
+	{
+		"caption": "PHP Serialize",
+		"command": "uniq_php_serialize"
+	},
+	{
+		"caption": "PHP Deserialize",
+		"command": "uniq_php_deserialize"
+	}
+]
