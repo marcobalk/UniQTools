@@ -19,7 +19,7 @@ Package for some useful tools for Sublime Text
 
 ## Installation
 
-To install UniQTools, Install Package Control First. See: <https://sublime.wbond.net/installation>
+To install UniQTools, Install Package Control First. See: <https://packagecontrol.io/installation>
 
 Then after restarting, run “Package Control: Add Repository” command, and enter [https://github.com/marcobalk/UniQTools][home] at the prompt.
 
