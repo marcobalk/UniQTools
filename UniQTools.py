@@ -7,7 +7,7 @@ def plugin_loaded():
     global sett
     sett = sublime.load_settings("UniQTools.sublime-settings")
 
-class UniQAlnumCommand(sublime_plugin.TextCommand):
+class UniqAlnumCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for selection in self.view.sel():
 			if len(selection) > 0:
@@ -26,7 +26,7 @@ class UniQAlnumCommand(sublime_plugin.TextCommand):
 		rest = "".join(random.choice(alphabet) for x in range(length))
 		return newId + rest
 
-class UniQPhpUnserializeCommand(sublime_plugin.TextCommand):
+class UniqPhpUnserializeCommand(sublime_plugin.TextCommand):
 
 	def run(self, edit):
 		sel = self.view.sel()
@@ -46,7 +46,7 @@ class UniQPhpUnserializeCommand(sublime_plugin.TextCommand):
 			else:
 				pass
 
-class UniQPhpSerializeCommand(sublime_plugin.TextCommand):
+class UniqPhpSerializeCommand(sublime_plugin.TextCommand):
 
 	def run(self, edit):
 		sel = self.view.sel()
