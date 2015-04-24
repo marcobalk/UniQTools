@@ -29,7 +29,7 @@ Last but not least run “Package Control: Install Package” command, find and 
 ## Active Commands
 
 - PHP Serialize
-- PHP Deserialze
+- PHP Unserialze
 - Alnum
 
 ### Alnum
