@@ -9,7 +9,7 @@ class UniqAlnumCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for selection in self.view.sel():
 			if len(selection) > 0:
-				self.view.replace(edit, selection, self.alnum_from_string(self.view.substr(selection))
+				self.view.replace(edit, selection, self.alnum_from_string(self.view.substr(selection)))
 			else:
 				self.view.insert(edit, selection.begin(), self.alnum_generator())
 
