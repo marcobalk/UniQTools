@@ -26,7 +26,7 @@ class UniqAlnumCommand(sublime_plugin.TextCommand):
 
 	def alnum_from_string(self, st):
 		decimal.getcontext().prec = 60
-		sh = hashlib.sha1(st).digest()
+		sh = hashlib.sha1(st.encode('utf-8')).digest()
 		byt = struct.unpack('20B', sh)
 
 		val = 0
