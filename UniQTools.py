@@ -1,6 +1,4 @@
-import sublime, sublime_plugin, subprocess, string, random
-
-sett = sublime.load_settings("Alnum.sublime-settings")
+import sublime, sublime_plugin, subprocess, string, random, hashlib, struct, decimal
 
 # For ST3
 def plugin_loaded():
@@ -11,7 +9,7 @@ class UniqAlnumCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for selection in self.view.sel():
 			if len(selection) > 0:
-				self.view.replace(edit, selection, self.alnum_generator())
+				self.view.replace(edit, selection, self.alnum_from_string(selection))
 			else:
 				self.view.insert(edit, selection.begin(), self.alnum_generator())
 
@@ -25,6 +23,25 @@ class UniqAlnumCommand(sublime_plugin.TextCommand):
 		newId = random.choice(alphabet[:-10])
 		rest = "".join(random.choice(alphabet) for x in range(length))
 		return newId + rest
+
+	def alnum_from_string(self, st):
+		decimal.getcontext().prec = 60
+		sh = hashlib.sha1(st).digest()
+		byt = struct.unpack('20B', sh)
+
+		val = 0
+		for item in byt:
+			val = (decimal.Decimal(val) * decimal.Decimal(256)) + decimal.Decimal(item)
+
+		val,digit = divmod(val,26)
+		alnum = chr(ord('a') + digit)
+		alphabet = string.ascii_lowercase + string.digits
+
+		for i in range(0, 24):
+			val, digit = divmod(val, 36)
+			alnum += alphabet[int(digit)]
+
+		return alnum
 
 class UniqPhpUnserializeCommand(sublime_plugin.TextCommand):
 

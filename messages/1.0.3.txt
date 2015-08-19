@@ -1,0 +1,2 @@
+[Update]
+- Added alnum_from_string. When selecting text, the text is transformed into an alnum
