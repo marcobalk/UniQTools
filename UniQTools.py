@@ -1,4 +1,4 @@
-import sublime, sublime_plugin, subprocess, string, random, hashlib, struct, decimal
+import sublime, sublime_plugin, subprocess, string, random, hashlib, struct, decimal, datetime, getpass
 
 # For ST3
 def plugin_loaded():
@@ -78,3 +78,15 @@ class UniqPhpSerializeCommand(sublime_plugin.TextCommand):
 											stdout=subprocess.PIPE).communicate()[0]
 
 			self.view.replace(edit, region, serialized.decode("utf-8"))
+
+class UniqAddDateTimeStampCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		self.view.run_command("insert_snippet", { "contents": "%s" %  datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") } )
+
+class UniqAddDateStampCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		self.view.run_command("insert_snippet", { "contents": "%s" %  datetime.datetime.now().strftime("%Y-%m-%d") } )
+
+class UniqAddTimeStampCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		self.view.run_command("insert_snippet", { "contents": "%s" %  datetime.datetime.now().strftime("%H:%M:%S") } )

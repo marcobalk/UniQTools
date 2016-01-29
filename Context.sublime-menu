@@ -20,5 +20,25 @@
 			"id": "uniq_alnum",
 			"command": "uniq_alnum"
 		}]
+	},
+	{
+		"caption": "Timestamps",
+		"id": "uniqtimestamp",
+		"children":
+		[{
+			"caption": "Add DateTime Stamp",
+			"id": "uniq_add_date_time_stamp",
+			"command": "uniq_add_date_time_stamp"
+		},
+		{
+			"caption": "Add Date Stamp",
+			"id": "uniq_add_date_stamp",
+			"command": "uniq_add_date_stamp"
+		},
+		{
+			"caption": "Add Time Stamp",
+			"id": "uniq_add_time_stamp",
+			"command": "uniq_add_time_stamp"
+		}]
 	}
 ]

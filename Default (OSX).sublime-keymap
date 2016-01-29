@@ -1,5 +1,14 @@
 [
 	{
 		"keys": ["ctrl+a"], "command": "uniq_alnum"
+	},
+	{
+		"keys": ["ctrl+u,ctrl+d"], "command": "uniq_add_date_time_stamp"
+	},
+	{
+		"keys": ["ctrl+u,ctrl+t"], "command": "uniq_add_time_stamp"
+	},
+	{
+		"keys": ["ctrl+u,ctrl+s"], "command": "uniq_add_date_stamp"
 	}
 ]

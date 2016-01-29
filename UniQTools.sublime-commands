@@ -10,5 +10,17 @@
 	{
 		"caption" : "PHP Unserialize",
 		"command" : "uniq_php_unserialize"
+	},
+	{
+		"caption" : "Add DateTime Stamp",
+		"command" : "uniq_add_date_time_stamp"
+	},
+	{
+		"caption" : "Add Date Stamp",
+		"command" : "uniq_add_date_stamp"
+	},
+	{
+		"caption" : "Add Time Stamp",
+		"command" : "uniq_add_time_stamp"
 	}
 ]

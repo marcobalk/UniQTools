@@ -1,0 +1,6 @@
+[Update]
+- Added generation of Date/Time stamps by:
+	- Using command palette
+	- Context menu
+	- Shortcuts (ctrl-u + ctrl-[d,t,s])
+- Updated README.md for Date/Time stamps

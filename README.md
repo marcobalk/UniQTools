@@ -31,6 +31,9 @@ Last but not least run “Package Control: Install Package” command, find and 
 - PHP Serialize
 - PHP Unserialize
 - Alnum
+- Add DateTime Stamp
+- Add Date Stamp
+- Add Time Stamp
 
 ### Alnum
 With Alnum you can generate 25 character long code (default setting). Because of its length the generated code is always unique.
